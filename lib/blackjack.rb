@@ -43,11 +43,11 @@ def hit?(current_card_total)
   while count == 0 do
     input = get_user_input
     if input == "h"
-      display_card_total(current_card_total + deal_card)
+      new_total = current_card_total + deal_card
       count = 1
     elsif input == "s"
+      new_total = current_card_total
       count = 1
-      nil
     else
       invalid_command
     end
