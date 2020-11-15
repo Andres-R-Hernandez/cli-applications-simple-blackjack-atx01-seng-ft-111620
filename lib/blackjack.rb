@@ -39,14 +39,18 @@ end
 def hit?(current_card_total)
   # code hit? here
   prompt_user
+
   input = get_user_input
   if input == "h"
     display_card_total(current_card_total + deal_card)
+    count = 1
   elsif input == "s"
+    count = 1
     nil
   else
     invalid_command
   end
+
 end
 
 def invalid_command
