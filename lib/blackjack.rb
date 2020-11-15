@@ -46,7 +46,7 @@ def hit?(current_card_total)
     nil
   else
     invalid_command
-  end  
+  end
 end
 
 def invalid_command
