@@ -36,12 +36,22 @@ def initial_round
   card1+card2
 end
 
-def hit?
+def hit?(current_card_total)
   # code hit? here
+  prompt_user
+  input = get_user_input
+  if input == "h"
+    display_card_total(current_card_total + deal_card)
+  elsif input == "s"
+    nil
+  else
+    invalid_command
+  end  
 end
 
 def invalid_command
   # code invalid_command here
+  
 end
 
 #####################################################
