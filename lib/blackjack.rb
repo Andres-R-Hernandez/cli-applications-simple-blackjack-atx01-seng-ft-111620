@@ -38,9 +38,9 @@ end
 
 def hit?(current_card_total)
   # code hit? here
-  prompt_user
   count = 0
   while count == 0 do
+    prompt_user
     input = get_user_input
     if input == "h"
       new_total = current_card_total + deal_card
